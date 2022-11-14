@@ -1,7 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
 
-// import Repos from './components/repolist';
+// import Repos from './components/repolist' .nav-logo {
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #0066b2;
+  };
 import axios from 'axios';
 import '../App.css'
 
