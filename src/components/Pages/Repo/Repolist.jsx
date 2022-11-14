@@ -1,20 +1,15 @@
+import { useState, useEffect } from 'react';
 
-import React, { useState, useEffect } from 'react';
+import Repos from '/src/components/Repos';
 
-// import Repos from './components/repolist' .nav-logo {
-    font-weight: bold;
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: #0066b2;
-  };
 import axios from 'axios';
-import '../App.css'
+
+import './repo-list.css';
 
 
-
-const Repos = () => {
+const Repolist = () => {
   const [repos, setRepos] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [isloading, setIsLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [reposPerPage] = useState(1);
 
@@ -23,7 +18,7 @@ const Repos = () => {
       // setLoading(true);
       const res = await axios.get('https://api.github.com/users/IniomohAngela/repos');
       setRepos(res.data);
-      setLoading(false);                             
+      setIsLoading(false);                             
     }
 
     fetchRepos();
@@ -60,4 +55,4 @@ const Repos = () => {
 };
 
 
-export default Repos;
+export default Repolist;
