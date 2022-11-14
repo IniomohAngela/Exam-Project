@@ -7,8 +7,8 @@ const Home = () => {
     <diV className="home-container">
       <div className="home-content">
         <img className="pic-icon" src={Pic} alt="pic icon" />
-       <div className="home-title"> WELCOME!!! TO MY GITHUB PORTFOLIO PROJECT. THIS REPOSITORY BELONGS TO INIOMOH ANGELA</div>
-  
+        <div className="home-title"> WELCOME!!! TO MY GITHUB PORTFOLIO PROJECT. THIS REPOSITORY BELONGS TO INIOMOH ANGELA</div>
+
       </div>
     </diV>
   );
