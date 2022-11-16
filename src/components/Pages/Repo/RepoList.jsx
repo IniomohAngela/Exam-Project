@@ -4,6 +4,8 @@ import Repos from '/src/components/Repos';
 
 import { useState, useEffect } from 'react';
 
+import Pagination from '/src/components/Pagination/Pagination'
+
 import './repo-list.css';
 
 const RepoList = () => {
@@ -36,18 +38,21 @@ const RepoList = () => {
 
   return (
     <React.Fragment>
-      <h1 className="title">MY Repo List</h1>
+      <h1 className="title">MY RepoList</h1>
 
-       <div className="each-repo">
+      <div className="each-repo">
         <Repos repos={currentRepos} isLoading={isLoading} />
       </div>
 
-
-    </React.Fragment>
+      <Pagination
+        className="pagination"
+        reposPerPage={reposPerPage}
+        totalRepos={totalRepos}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+        isLoading={isLoading}
+      />
+  </React.Fragment>
   );
-
-
-
-
 };
 export default RepoList;
