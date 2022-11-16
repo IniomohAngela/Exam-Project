@@ -3,7 +3,7 @@ import Home from './components/Pages/Home/Home';
 import NavBar from './components/NavBar/NavBar';
 import './App.css';
 import About from './components/Pages/About/About';
-
+import Repolist from './components/Pages/Repo/Repolist'
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/repos" element={<Repolist />} />
 
         </Routes>
       </BrowserRouter>
