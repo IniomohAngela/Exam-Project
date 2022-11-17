@@ -30,9 +30,7 @@ const NavBar = () => {
           <a className="nav-link" href="/404">
             404
             </a>
-          <button className="nav-link" Go Back Home>
-            Error 
-          </button>
+          
         </div>
       </div>
     </div>);
