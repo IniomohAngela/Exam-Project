@@ -2,9 +2,11 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
+import './page.css';
+
 import pic from '/src/Images/Failure.png'
 
-const Error = () => {
+const Page = () => {
   return (
     <div className="error-container">
       <div className="error-details">
@@ -14,9 +16,7 @@ const Error = () => {
         </Link>
       </div>
     </div>
-
-  )
-
+  );
 };
 
-export default Error;
+export default Page;

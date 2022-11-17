@@ -15,7 +15,7 @@ const NavBar = () => {
     <div className='navbar'>
       <div className="navbar-content">
         <a href="/" style={{ textDecoration: 'none' }}>
-          <div className="nav-logo">MY REPOS</div>
+          <div className="nav-logo">REPOS</div>
         </a>
         <div className="nav-links">
           <a className="nav-link" href="/">
@@ -27,8 +27,11 @@ const NavBar = () => {
           <a className="nav-link" href="/about">
             About
           </a>
-          <button className="nav-link" onClick={() => setError(true)}>
-            Error
+          <a className="nav-link" href="/404">
+            404
+            </a>
+          <button className="nav-link" Go Back Home>
+            Error 
           </button>
         </div>
       </div>
